@@ -122,21 +122,23 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {
         'simple': {
-            'format': '{levelname}' '{message}',
+            'format': '{levelname} {message}',
             'style': '{',
         },
         'verbose': {
-            'format': '{levelname}' '{actime}' '{procces}' '{thread}' '{message}',
+            'format': '{levelname} {asctime} {module} {process} {thread} {message}',
             'style': '{',
         }
     },
     'handlers': {
         'console': {
             'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
         },
         'file': {
             'class': 'logging.FileHandler',
             'filename': 'django.log',
+            'formatter': 'verbose',
         },
     },
     'loggers': {
@@ -145,11 +147,6 @@ LOGGING = {
             'level': 'INFO',
         },
         'myapp': {
-            'handlers': ['console', 'file'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-        'myapp_2': {
             'handlers': ['console', 'file'],
             'level': 'DEBUG',
             'propagate': True,
