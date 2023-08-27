@@ -1,0 +1,60 @@
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2399
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2450
+"GET /index HTTP/1.1" 301 0
+Index page accessed
+Internal Server Error: /index/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+"GET /index/ HTTP/1.1" 500 67285
+"GET /about HTTP/1.1" 301 0
+About page accessed
+Internal Server Error: /about/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+"GET /about/ HTTP/1.1" 500 67375
+G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+Internal Server Error: /
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\utils\deprecation.py", line 136, in __call__
+    response = self.process_response(request, response)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\middleware\clickjacking.py", line 27, in process_response
+    if response.get("X-Frame-Options") is not None:
+AttributeError: 'str' object has no attribute 'get'
+"GET / HTTP/1.1" 500 67225
+G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 218
+G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 223
+About page accessed
+"GET /about/ HTTP/1.1" 200 279
+G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Index page accessed
+"GET / HTTP/1.1" 200 223
+About page accessed
+"GET /about/ HTTP/1.1" 200 279
+About page accessed
+"GET /about/ HTTP/1.1" 200 279
