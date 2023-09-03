@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Post</title>
+</head>
+<body>
+  <h1>{{ post.title }}</h1>
+  <p>{{ post.content }}</p>
+  <p>{{ post.count }}</p>
+  {% for comment in comments %}
+    <p>{{ comment.comment }}</p>
+    <p>{{ comment.author.name }}</p>
+    <p>{{ comment.public_date }}</p>
+    {% if comment.public_date != comment.change_date %}
+        <p>Изменено {{ comment.change_date }}</p>
+    {% endif %}
+{% endfor %}
+</body>
+</html>

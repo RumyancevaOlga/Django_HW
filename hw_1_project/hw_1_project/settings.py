@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'myapp',
     'myapp_sem2',
     'myapp_hw2',
+    'myapp_sem3',
 ]
 
 MIDDLEWARE = [

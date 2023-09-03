@@ -4,3 +4,324 @@ INFO 2023-08-27 18:30:35,733 views 5788 9856 Index page accessed
 INFO 2023-08-27 18:30:35,734 basehttp 5788 9856 "GET / HTTP/1.1" 200 223
 INFO 2023-08-27 18:30:36,889 views 5788 9856 About page accessed
 INFO 2023-08-27 18:30:36,890 basehttp 5788 9856 "GET /about/ HTTP/1.1" 200 279
+INFO 2023-09-03 18:20:10,224 autoreload 13644 6372 Watching for file changes with StatReloader
+INFO 2023-09-03 18:20:12,529 views 13644 17712 Index page accessed
+INFO 2023-09-03 18:20:12,531 basehttp 13644 17712 "GET / HTTP/1.1" 200 223
+WARNING 2023-09-03 18:20:12,707 log 13644 17712 Not Found: /favicon.ico
+WARNING 2023-09-03 18:20:12,707 basehttp 13644 17712 "GET /favicon.ico HTTP/1.1" 404 2444
+WARNING 2023-09-03 18:20:34,853 log 13644 17712 Not Found: /sem3/posts/2
+WARNING 2023-09-03 18:20:34,854 basehttp 13644 17712 "GET /sem3/posts/2 HTTP/1.1" 404 2447
+INFO 2023-09-03 18:21:40,506 autoreload 13644 6372 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\hw_1_project\urls.py changed, reloading.
+INFO 2023-09-03 18:21:41,242 autoreload 16476 8004 Watching for file changes with StatReloader
+INFO 2023-09-03 18:21:43,831 basehttp 16476 14156 "GET /sem3/posts/2 HTTP/1.1" 200 176
+INFO 2023-09-03 18:21:46,686 basehttp 16476 14156 "GET /sem3/post/2 HTTP/1.1" 200 1586
+INFO 2023-09-03 18:22:11,814 basehttp 16476 14156 "GET /sem3/posts/4 HTTP/1.1" 200 176
+INFO 2023-09-03 18:22:17,582 basehttp 16476 14156 "GET /sem3/posts/9 HTTP/1.1" 200 177
+INFO 2023-09-03 18:22:22,735 basehttp 16476 14156 "GET /sem3/posts/1 HTTP/1.1" 200 156
+INFO 2023-09-03 18:22:30,678 basehttp 16476 14156 "GET /sem3/posts/10 HTTP/1.1" 200 297
+INFO 2023-09-03 18:22:35,080 basehttp 16476 14156 "GET /sem3/post/24 HTTP/1.1" 200 1304
+INFO 2023-09-03 18:39:45,000 autoreload 15980 17852 Watching for file changes with StatReloader
+INFO 2023-09-03 18:41:39,750 autoreload 9296 2032 Watching for file changes with StatReloader
+WARNING 2023-09-03 18:41:54,398 log 9296 8908 Not Found: /hw3/2
+WARNING 2023-09-03 18:41:54,399 basehttp 9296 8908 "GET /hw3/2 HTTP/1.1" 404 2724
+INFO 2023-09-03 18:42:06,919 basehttp 9296 8908 "GET /hw3/order/3 HTTP/1.1" 301 0
+INFO 2023-09-03 18:42:06,934 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 200 269
+ERROR 2023-09-03 18:44:27,581 log 9296 7024 Internal Server Error: /hw3/order/3/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 14, in client_orders
+    return render(request, 'myapp_hw2/client_orders.html', context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-03 18:44:27,589 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 500 120170
+ERROR 2023-09-03 18:47:47,145 log 9296 7024 Internal Server Error: /hw3/order/3/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 14, in client_orders
+    return render(request, 'myapp_hw2/client_orders.html', context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 193, in render
+    values = list(values)
+TypeError: 'ManyRelatedManager' object is not iterable
+ERROR 2023-09-03 18:47:47,148 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 500 120170
+INFO 2023-09-03 18:47:56,518 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 200 269
+ERROR 2023-09-03 18:51:29,461 log 9296 7024 Internal Server Error: /hw3/order/3/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 14, in client_orders
+    return render(request, 'myapp_hw2/client_orders.html', context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 14: 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-03 18:51:29,466 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 500 136254
+INFO 2023-09-03 18:52:18,323 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 200 325
+INFO 2023-09-03 18:52:55,777 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 200 325
+INFO 2023-09-03 18:52:57,573 basehttp 9296 7024 "GET /hw3/order/3/ HTTP/1.1" 200 439
+INFO 2023-09-03 18:53:08,248 basehttp 9296 7024 "GET /hw3/order/1 HTTP/1.1" 301 0
+INFO 2023-09-03 18:53:08,258 basehttp 9296 7804 "GET /hw3/order/1/ HTTP/1.1" 200 618
+INFO 2023-09-03 18:53:20,415 basehttp 9296 7804 "GET /hw3/order/2 HTTP/1.1" 301 0
+INFO 2023-09-03 18:53:20,427 basehttp 9296 628 "GET /hw3/order/2/ HTTP/1.1" 200 610
+INFO 2023-09-03 18:53:29,663 basehttp 9296 628 "GET /hw3/order/4 HTTP/1.1" 301 0
+INFO 2023-09-03 18:53:29,673 basehttp 9296 18056 "GET /hw3/order/4/ HTTP/1.1" 200 531
+INFO 2023-09-03 19:18:33,727 autoreload 16772 10608 Watching for file changes with StatReloader
+WARNING 2023-09-03 19:18:48,979 log 16772 3688 Not Found: /hw3/products/week
+WARNING 2023-09-03 19:18:48,979 basehttp 16772 3688 "GET /hw3/products/week HTTP/1.1" 404 2972
+ERROR 2023-09-03 19:19:00,675 log 16772 3688 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'date'
+ERROR 2023-09-03 19:19:00,676 basehttp 16772 3688 "GET /hw3/products/2/week HTTP/1.1" 500 63911
+INFO 2023-09-03 19:20:04,419 autoreload 16772 10608 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-03 19:20:05,133 autoreload 9720 4948 Watching for file changes with StatReloader
+ERROR 2023-09-03 19:20:05,610 log 9720 15228 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'date'
+ERROR 2023-09-03 19:20:05,612 basehttp 9720 15228 "GET /hw3/products/2/week HTTP/1.1" 500 64048
+ERROR 2023-09-03 19:20:06,946 log 9720 15228 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'date'
+ERROR 2023-09-03 19:20:06,948 basehttp 9720 15228 "GET /hw3/products/2/week HTTP/1.1" 500 64048
+INFO 2023-09-03 19:20:18,197 autoreload 6160 5608 Watching for file changes with StatReloader
+ERROR 2023-09-03 19:20:24,432 log 6160 14432 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'date'
+ERROR 2023-09-03 19:20:24,433 basehttp 6160 14432 "GET /hw3/products/2/week HTTP/1.1" 500 64048
+ERROR 2023-09-03 19:20:34,943 log 6160 14432 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() got an unexpected keyword argument 'date'
+ERROR 2023-09-03 19:20:34,944 basehttp 6160 14432 "GET /hw3/products/2/week HTTP/1.1" 500 63911
+INFO 2023-09-03 19:20:56,712 autoreload 6160 5608 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\urls.py changed, reloading.
+INFO 2023-09-03 19:20:57,398 autoreload 720 16200 Watching for file changes with StatReloader
+INFO 2023-09-03 19:21:25,743 autoreload 6604 9308 Watching for file changes with StatReloader
+INFO 2023-09-03 19:21:33,659 autoreload 6604 9308 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\urls.py changed, reloading.
+INFO 2023-09-03 19:21:34,300 autoreload 17968 9428 Watching for file changes with StatReloader
+INFO 2023-09-03 19:21:36,098 basehttp 17968 18304 "GET /hw3/products/2/week HTTP/1.1" 200 276
+INFO 2023-09-03 19:22:06,002 basehttp 17968 18304 "GET /hw3/products/2/week HTTP/1.1" 200 276
+INFO 2023-09-03 19:22:07,379 basehttp 17968 18304 "GET /hw3/products/2/week HTTP/1.1" 200 276
+INFO 2023-09-03 19:22:28,761 autoreload 17968 9428 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-03 19:22:29,392 autoreload 8988 16724 Watching for file changes with StatReloader
+INFO 2023-09-03 19:22:30,563 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 200 276
+INFO 2023-09-03 19:23:16,931 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 200 276
+INFO 2023-09-03 19:23:20,024 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 200 428
+ERROR 2023-09-03 19:25:11,498 log 8988 14992 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 38, in client_products
+    return render(request, 'myapp_hw2/client_products.html', context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'endif', expected 'empty' or 'endfor'. Did you forget to register or load this tag?
+ERROR 2023-09-03 19:25:11,503 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 500 170115
+INFO 2023-09-03 19:25:54,426 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 200 188
+INFO 2023-09-03 19:26:26,024 basehttp 8988 14992 "GET /hw3/order/4/ HTTP/1.1" 200 531
+INFO 2023-09-03 19:26:27,203 basehttp 8988 14992 "GET /hw3/order/2/ HTTP/1.1" 200 610
+INFO 2023-09-03 19:27:10,760 basehttp 8988 14992 "GET /hw3/products/2/week HTTP/1.1" 200 892
+ERROR 2023-09-03 19:32:28,280 log 8988 3676 Internal Server Error: /hw3/products/2/week
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\smartif.py", line 179, in translate_token
+    op = OPERATORS[token]
+KeyError: "date:date:'d M Y'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 38, in client_products
+    return render(request, 'myapp_hw2/client_products.html', context)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 853, in do_for
+    nodelist_loop = parser.parse(
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 952, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 885, in __init__
+    super().__init__(*args, **kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\smartif.py", line 170, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\smartif.py", line 181, in translate_token
+    return self.create_var(token)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\defaulttags.py", line 888, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "G:\Домашнее задание GeekBrains\pythonProject\venv\lib\site-packages\django\template\base.py", line 703, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':date:'d M Y'' from 'date:date:'d M Y''
+ERROR 2023-09-03 19:32:28,285 basehttp 8988 3676 "GET /hw3/products/2/week HTTP/1.1" 500 190552
+INFO 2023-09-03 19:32:52,484 basehttp 8988 3676 "GET /hw3/products/2/week HTTP/1.1" 200 892
+INFO 2023-09-03 19:33:55,866 basehttp 8988 3676 "GET /hw3/products/2/week HTTP/1.1" 200 812
+INFO 2023-09-03 19:41:04,638 basehttp 8988 18080 "GET /hw3/products/2/week HTTP/1.1" 200 812
+INFO 2023-09-03 19:41:19,314 autoreload 8988 16724 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-03 19:41:20,020 autoreload 2352 12460 Watching for file changes with StatReloader
+INFO 2023-09-03 19:41:20,175 basehttp 2352 5600 "GET /hw3/products/2/week HTTP/1.1" 200 812
+INFO 2023-09-03 19:41:22,892 basehttp 2352 5600 "GET /hw3/products/2/week HTTP/1.1" 200 812
