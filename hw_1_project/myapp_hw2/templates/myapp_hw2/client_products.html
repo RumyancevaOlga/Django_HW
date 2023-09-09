@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+    <h1>{{ client.name }}</h1>
+    {% for order in orders %}
+    {% if order.registrations_date|date:'d M Y' >= date|date:'d M Y' %}
+      <p>{{ order.registrations_date }}</p>
+        {% for product in order.product.all %}
+            <p>{{ product.title }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+</body>
+</html>
