@@ -31,11 +31,14 @@ class Client(models.Model):
 # ○ дата добавления товара
 
 class Product(models.Model):
+    # Измените модель продукта, добавьте поле для хранения фотографии продукта.
+    # Создайте форму, которая позволит сохранять фото.
     title = models.CharField(max_length=100)
     description = models.TextField()
     price = models.DecimalField(max_digits=10, decimal_places=2)
     count = models.IntegerField()
     change_date = models.DateTimeField(auto_now=True)
+    photo = models.ImageField(null=True, default=None)
 
     def __str__(self):
         return f'title: {self.title}, price: {self.price}'

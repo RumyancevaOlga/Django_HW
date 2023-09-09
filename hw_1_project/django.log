@@ -4,3 +4,161 @@ INFO 2023-08-27 18:30:35,733 views 5788 9856 Index page accessed
 INFO 2023-08-27 18:30:35,734 basehttp 5788 9856 "GET / HTTP/1.1" 200 223
 INFO 2023-08-27 18:30:36,889 views 5788 9856 About page accessed
 INFO 2023-08-27 18:30:36,890 basehttp 5788 9856 "GET /about/ HTTP/1.1" 200 279
+INFO 2023-09-09 21:47:20,406 autoreload 8372 18112 Watching for file changes with StatReloader
+INFO 2023-09-09 21:47:22,267 views 8372 7976 Index page accessed
+INFO 2023-09-09 21:47:22,268 basehttp 8372 7976 "GET / HTTP/1.1" 200 223
+WARNING 2023-09-09 21:47:22,448 log 8372 7976 Not Found: /favicon.ico
+WARNING 2023-09-09 21:47:22,448 basehttp 8372 7976 "GET /favicon.ico HTTP/1.1" 404 2548
+WARNING 2023-09-09 21:47:34,740 log 8372 7976 Not Found: /hw2/1
+WARNING 2023-09-09 21:47:34,741 basehttp 8372 7976 "GET /hw2/1 HTTP/1.1" 404 2638
+INFO 2023-09-09 21:47:49,932 basehttp 8372 7976 "GET /hw2/change_product/1 HTTP/1.1" 301 0
+INFO 2023-09-09 21:47:49,997 basehttp 8372 17420 "GET /hw2/change_product/1/ HTTP/1.1" 200 1423
+ERROR 2023-09-09 21:48:34,619 log 8372 17420 Internal Server Error: /hw2/change_product/1/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 12, in product_form
+    pk=Product.objects.filter(product_id).first(),
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\query.py", line 1436, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\query.py", line 1454, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\query.py", line 1461, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\sql\query.py", line 1545, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\sql\query.py", line 1576, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\sql\query.py", line 1423, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable int object
+ERROR 2023-09-09 21:48:34,622 basehttp 8372 17420 "POST /hw2/change_product/1/ HTTP/1.1" 500 100822
+INFO 2023-09-09 21:49:32,791 autoreload 8372 18112 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 21:49:33,494 autoreload 280 8580 Watching for file changes with StatReloader
+INFO 2023-09-09 21:49:34,046 basehttp 280 13400 "POST /hw2/change_product/1/ HTTP/1.1" 200 1572
+INFO 2023-09-09 21:52:03,707 autoreload 280 8580 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\models.py changed, reloading.
+INFO 2023-09-09 21:52:04,561 autoreload 4984 2312 Watching for file changes with StatReloader
+INFO 2023-09-09 21:59:02,572 autoreload 4984 2312 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 21:59:03,170 autoreload 13372 17148 Watching for file changes with StatReloader
+INFO 2023-09-09 22:00:01,480 autoreload 11544 14864 Watching for file changes with StatReloader
+INFO 2023-09-09 22:01:09,422 autoreload 11544 14864 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\urls.py changed, reloading.
+INFO 2023-09-09 22:01:10,027 autoreload 5648 11196 Watching for file changes with StatReloader
+INFO 2023-09-09 22:01:16,420 basehttp 5648 5772 "GET /hw2/upload_image_to_product HTTP/1.1" 301 0
+INFO 2023-09-09 22:01:16,438 basehttp 5648 17232 "GET /hw2/upload_image_to_product/ HTTP/1.1" 200 631
+INFO 2023-09-09 22:01:37,927 autoreload 5648 11196 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\forms.py changed, reloading.
+INFO 2023-09-09 22:08:42,011 autoreload 1976 5736 Watching for file changes with StatReloader
+INFO 2023-09-09 22:10:12,776 basehttp 1976 8924 "GET /hw2/upload_image_to_product/ HTTP/1.1" 200 646
+INFO 2023-09-09 22:11:46,767 autoreload 1976 5736 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 22:11:47,496 autoreload 17136 5344 Watching for file changes with StatReloader
+INFO 2023-09-09 22:13:07,252 autoreload 17136 5344 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 22:13:07,889 autoreload 15876 2840 Watching for file changes with StatReloader
+ERROR 2023-09-09 22:13:13,787 log 15876 12060 Internal Server Error: /hw2/upload_image_to_product/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: upload_image_to_product() missing 1 required positional argument: 'product_id'
+ERROR 2023-09-09 22:13:13,788 basehttp 15876 12060 "GET /hw2/upload_image_to_product/ HTTP/1.1" 500 62782
+ERROR 2023-09-09 22:13:20,427 log 15876 12060 Internal Server Error: /hw2/upload_image_to_product/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: upload_image_to_product() missing 1 required positional argument: 'product_id'
+ERROR 2023-09-09 22:13:20,428 basehttp 15876 12060 "GET /hw2/upload_image_to_product/ HTTP/1.1" 500 62782
+INFO 2023-09-09 22:13:33,413 autoreload 15876 2840 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\urls.py changed, reloading.
+INFO 2023-09-09 22:13:34,053 autoreload 1840 10688 Watching for file changes with StatReloader
+WARNING 2023-09-09 22:13:42,612 log 1840 13392 Not Found: /hw2/upload_image_to_product/
+WARNING 2023-09-09 22:13:42,612 basehttp 1840 13392 "GET /hw2/upload_image_to_product/ HTTP/1.1" 404 2937
+INFO 2023-09-09 22:13:51,621 basehttp 1840 13392 "GET /hw2/upload_image_to_product/1 HTTP/1.1" 301 0
+INFO 2023-09-09 22:13:51,636 basehttp 1840 2584 "GET /hw2/upload_image_to_product/1/ HTTP/1.1" 200 605
+ERROR 2023-09-09 22:13:59,056 log 1840 2584 Internal Server Error: /hw2/upload_image_to_product/1/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 33, in upload_image_to_product
+    image=form.cleaned_data['image']
+KeyError: 'image'
+ERROR 2023-09-09 22:13:59,059 basehttp 1840 2584 "POST /hw2/upload_image_to_product/1/ HTTP/1.1" 500 67937
+INFO 2023-09-09 22:14:33,743 autoreload 1840 10688 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 22:14:34,423 autoreload 4424 13260 Watching for file changes with StatReloader
+ERROR 2023-09-09 22:14:39,279 log 4424 4976 Internal Server Error: /hw2/upload_image_to_product/1/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 33, in upload_image_to_product
+    photo=form.cleaned_data['image']
+KeyError: 'image'
+ERROR 2023-09-09 22:14:39,279 basehttp 4424 4976 "POST /hw2/upload_image_to_product/1/ HTTP/1.1" 500 67937
+ERROR 2023-09-09 22:14:45,019 log 4424 4976 Internal Server Error: /hw2/upload_image_to_product/1/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 33, in upload_image_to_product
+    photo=form.cleaned_data['image']
+KeyError: 'image'
+ERROR 2023-09-09 22:14:45,021 basehttp 4424 4976 "POST /hw2/upload_image_to_product/1/ HTTP/1.1" 500 67937
+INFO 2023-09-09 22:15:35,623 autoreload 4424 13260 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 22:15:36,283 autoreload 1016 7852 Watching for file changes with StatReloader
+ERROR 2023-09-09 22:15:40,593 log 1016 8080 Internal Server Error: /hw2/upload_image_to_product/1/
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: myapp_hw2_product.price
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py", line 35, in upload_image_to_product
+    product.save()
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\base.py", line 814, in save
+    self.save_base(
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\base.py", line 877, in save_base
+    updated = self._save_table(
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\base.py", line 990, in _save_table
+    updated = self._do_update(
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\base.py", line 1054, in _do_update
+    return filtered._update(values) > 0
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\query.py", line 1231, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\sql\compiler.py", line 1984, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "G:\Домашнее задание GeekBrains\Django(HW)\lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: myapp_hw2_product.price
+ERROR 2023-09-09 22:15:40,593 basehttp 1016 8080 "POST /hw2/upload_image_to_product/1/ HTTP/1.1" 500 149435
+INFO 2023-09-09 22:18:58,493 autoreload 1016 7852 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-09 22:18:59,123 autoreload 9396 2776 Watching for file changes with StatReloader
+INFO 2023-09-09 22:19:03,798 basehttp 9396 12508 "POST /hw2/upload_image_to_product/1/ HTTP/1.1" 200 646
