@@ -20,5 +20,10 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
+<<<<<<< HEAD
     path('hw2/', include('myapp_hw2.urls')),
+=======
+    path('sem3/', include('myapp_sem3.urls')),
+    path('hw3/', include('myapp_hw2.urls')),
+>>>>>>> 3f27b301cc4ba52a21b966e14e6ccc65d7a3ec5e
 ]
