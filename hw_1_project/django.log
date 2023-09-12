@@ -486,3 +486,120 @@ INFO 2023-09-03 19:41:20,020 autoreload 2352 12460 Watching for file changes wit
 INFO 2023-09-03 19:41:20,175 basehttp 2352 5600 "GET /hw3/products/2/week HTTP/1.1" 200 812
 INFO 2023-09-03 19:41:22,892 basehttp 2352 5600 "GET /hw3/products/2/week HTTP/1.1" 200 812
 >>>>>>> 3f27b301cc4ba52a21b966e14e6ccc65d7a3ec5e
+INFO 2023-09-12 19:54:44,835 autoreload 2476 12440 Watching for file changes with StatReloader
+INFO 2023-09-12 19:55:29,681 autoreload 2476 12440 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\urls.py changed, reloading.
+INFO 2023-09-12 19:55:30,311 autoreload 16712 13844 Watching for file changes with StatReloader
+INFO 2023-09-12 19:56:00,288 autoreload 16712 13844 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-12 19:56:00,919 autoreload 11088 5216 Watching for file changes with StatReloader
+INFO 2023-09-12 19:56:12,210 autoreload 11088 5216 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\views.py changed, reloading.
+INFO 2023-09-12 19:56:12,865 autoreload 11276 16408 Watching for file changes with StatReloader
+INFO 2023-09-12 19:56:14,885 views 11276 12340 Index page accessed
+INFO 2023-09-12 19:56:14,887 basehttp 11276 12340 "GET / HTTP/1.1" 200 223
+WARNING 2023-09-12 19:56:15,019 log 11276 12340 Not Found: /favicon.ico
+WARNING 2023-09-12 19:56:15,020 basehttp 11276 12340 "GET /favicon.ico HTTP/1.1" 404 2757
+WARNING 2023-09-12 19:56:57,472 log 11276 12340 Not Found: /order/2
+WARNING 2023-09-12 19:56:57,473 basehttp 11276 12340 "GET /order/2 HTTP/1.1" 404 2745
+INFO 2023-09-12 19:57:19,336 basehttp 11276 12340 "GET /hw2/order/2 HTTP/1.1" 301 0
+INFO 2023-09-12 19:57:19,371 basehttp 11276 4188 "GET /hw2/order/2/ HTTP/1.1" 200 624
+INFO 2023-09-12 20:14:11,892 autoreload 11276 16408 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\admin.py changed, reloading.
+INFO 2023-09-12 20:14:13,662 autoreload 8216 11388 Watching for file changes with StatReloader
+INFO 2023-09-12 20:16:09,496 autoreload 15776 12244 Watching for file changes with StatReloader
+INFO 2023-09-12 20:16:14,144 basehttp 15776 9064 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:16:14,218 basehttp 15776 9064 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4181
+INFO 2023-09-12 20:16:16,835 basehttp 15776 9064 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:16:16,866 basehttp 15776 9064 "GET /admin/ HTTP/1.1" 200 7083
+INFO 2023-09-12 20:16:21,811 basehttp 15776 9064 "GET /admin/myapp_hw2/client/ HTTP/1.1" 200 9970
+INFO 2023-09-12 20:16:21,858 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:16:25,197 basehttp 15776 9064 "GET /admin/ HTTP/1.1" 200 7083
+INFO 2023-09-12 20:16:26,207 basehttp 15776 9064 "GET /admin/myapp_hw2/order/ HTTP/1.1" 200 12208
+INFO 2023-09-12 20:16:26,255 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:16:29,572 basehttp 15776 9064 "GET /admin/ HTTP/1.1" 200 7083
+INFO 2023-09-12 20:17:43,956 basehttp 15776 9064 "GET /admin/auth/group/add/ HTTP/1.1" 200 14354
+INFO 2023-09-12 20:17:43,996 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:18:40,557 basehttp 15776 9064 "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:18:40,582 basehttp 15776 9064 "GET /admin/auth/group/ HTTP/1.1" 200 9736
+INFO 2023-09-12 20:18:40,625 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:18:48,977 basehttp 15776 9064 "GET /admin/auth/group/add/ HTTP/1.1" 200 14354
+INFO 2023-09-12 20:18:49,011 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:19:20,664 basehttp 15776 9064 "POST /admin/auth/group/add/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:19:20,686 basehttp 15776 9064 "GET /admin/auth/group/ HTTP/1.1" 200 9927
+INFO 2023-09-12 20:19:20,737 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:19:25,272 basehttp 15776 9064 "GET /admin/auth/ HTTP/1.1" 200 5576
+INFO 2023-09-12 20:19:31,197 basehttp 15776 9064 "GET /admin/auth/user/add/ HTTP/1.1" 200 11163
+INFO 2023-09-12 20:19:31,241 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:20:06,301 basehttp 15776 9064 "POST /admin/auth/user/add/ HTTP/1.1" 200 11405
+INFO 2023-09-12 20:20:06,344 basehttp 15776 9064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:20:48,091 basehttp 15776 9064 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:20:48,140 basehttp 15776 9064 "GET /admin/auth/user/2/change/ HTTP/1.1" 200 23989
+INFO 2023-09-12 20:20:48,210 basehttp 15776 2552 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:20:48,311 basehttp 15776 9064 "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+INFO 2023-09-12 20:20:48,331 basehttp 15776 3064 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2023-09-12 20:20:48,395 basehttp 15776 9064 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2023-09-12 20:20:48,395 basehttp 15776 3064 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2023-09-12 20:21:39,756 basehttp 15776 3064 "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:21:39,782 basehttp 15776 3064 "GET /admin/auth/user/ HTTP/1.1" 200 12568
+INFO 2023-09-12 20:21:39,819 basehttp 15776 3064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:21:39,850 basehttp 15776 3064 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2023-09-12 20:21:50,316 basehttp 15776 3064 "GET /admin/auth/user/add/ HTTP/1.1" 200 11163
+INFO 2023-09-12 20:21:50,364 basehttp 15776 3064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:22:07,718 basehttp 15776 3064 "POST /admin/auth/user/add/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:22:07,755 basehttp 15776 3064 "GET /admin/auth/user/3/change/ HTTP/1.1" 200 23929
+INFO 2023-09-12 20:22:07,790 basehttp 15776 3064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:22:59,243 basehttp 15776 3064 "POST /admin/auth/user/3/change/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:22:59,268 basehttp 15776 3064 "GET /admin/auth/user/ HTTP/1.1" 200 12972
+INFO 2023-09-12 20:22:59,316 basehttp 15776 3064 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-09-12 20:23:30,264 basehttp 15776 3064 "GET /admin/ HTTP/1.1" 200 8828
+INFO 2023-09-12 20:53:10,684 autoreload 15776 12244 G:\Домашнее задание GeekBrains\pythonProject\hw_1_project\myapp_hw2\admin.py changed, reloading.
+INFO 2023-09-12 20:53:11,446 autoreload 2296 12616 Watching for file changes with StatReloader
+INFO 2023-09-12 20:53:21,056 basehttp 2296 11476 "GET /admin/myapp_hw2/client/ HTTP/1.1" 200 12519
+INFO 2023-09-12 20:53:21,115 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:54:12,023 basehttp 2296 11476 "GET /admin/myapp_hw2/client/3/change/ HTTP/1.1" 200 12147
+INFO 2023-09-12 20:54:12,060 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:54:20,954 basehttp 2296 11476 "GET /admin/myapp_hw2/client/ HTTP/1.1" 200 12519
+INFO 2023-09-12 20:54:21,568 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 9292
+INFO 2023-09-12 20:54:32,027 basehttp 2296 11476 "GET /admin/myapp_hw2/order/ HTTP/1.1" 200 15673
+INFO 2023-09-12 20:54:32,074 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:54:58,821 basehttp 2296 11476 "GET /admin/myapp_hw2/order/1/change/ HTTP/1.1" 200 11340
+INFO 2023-09-12 20:54:58,889 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:55:12,590 basehttp 2296 11476 "GET /admin/myapp_hw2/order/ HTTP/1.1" 200 15673
+INFO 2023-09-12 20:55:14,087 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 9292
+INFO 2023-09-12 20:55:17,417 basehttp 2296 11476 "GET /admin/myapp_hw2/order/ HTTP/1.1" 200 15673
+INFO 2023-09-12 20:55:17,464 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:55:18,563 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 9292
+INFO 2023-09-12 20:55:19,962 basehttp 2296 11476 "GET /admin/myapp_hw2/product/ HTTP/1.1" 200 11776
+INFO 2023-09-12 20:55:19,999 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:55:57,021 basehttp 2296 11476 "GET /admin/myapp_hw2/product/3/change/ HTTP/1.1" 200 13111
+INFO 2023-09-12 20:55:57,091 basehttp 2296 11964 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:55:57,163 basehttp 2296 11476 "GET /static/admin/js/collapse.js HTTP/1.1" 200 1803
+INFO 2023-09-12 20:56:24,729 basehttp 2296 11476 "GET /admin/myapp_hw2/product/ HTTP/1.1" 200 11776
+INFO 2023-09-12 20:56:26,738 basehttp 2296 11476 "GET /admin/myapp_hw2/product/1/change/ HTTP/1.1" 200 13270
+INFO 2023-09-12 20:56:26,772 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+WARNING 2023-09-12 20:56:33,482 log 2296 11476 Not Found: /kartinki-nyashnye-kotiki-14_aJPhUAG.jpg
+WARNING 2023-09-12 20:56:33,483 basehttp 2296 11476 "GET /kartinki-nyashnye-kotiki-14_aJPhUAG.jpg HTTP/1.1" 404 2841
+INFO 2023-09-12 20:56:36,263 basehttp 2296 11476 "GET /admin/myapp_hw2/product/1/change/ HTTP/1.1" 200 13270
+INFO 2023-09-12 20:56:58,901 basehttp 2296 11476 "GET /admin/myapp_hw2/product/ HTTP/1.1" 200 11776
+INFO 2023-09-12 20:56:59,842 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 9292
+INFO 2023-09-12 20:57:03,620 basehttp 2296 11476 "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO 2023-09-12 20:57:05,371 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:57:05,385 basehttp 2296 11476 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-09-12 20:57:33,892 basehttp 2296 11476 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:57:33,910 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 6130
+INFO 2023-09-12 20:57:33,954 basehttp 2296 11476 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2023-09-12 20:57:43,909 basehttp 2296 11476 "GET /admin/myapp_hw2/product/ HTTP/1.1" 200 10625
+INFO 2023-09-12 20:57:43,955 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:57:46,120 basehttp 2296 11476 "GET /admin/myapp_hw2/product/3/change/ HTTP/1.1" 200 11954
+INFO 2023-09-12 20:57:46,153 basehttp 2296 11476 "GET /admin/jsi18n/ HTTP/1.1" 200 16066
+INFO 2023-09-12 20:57:50,830 basehttp 2296 11476 "GET /admin/myapp_hw2/product/ HTTP/1.1" 200 10625
+INFO 2023-09-12 20:57:55,276 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 6130
+INFO 2023-09-12 20:57:57,888 basehttp 2296 11476 "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO 2023-09-12 20:57:59,262 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:57:59,271 basehttp 2296 11476 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-09-12 20:58:10,538 basehttp 2296 11476 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:58:10,554 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 6061
+INFO 2023-09-12 20:58:18,447 basehttp 2296 11476 "GET /admin/myapp_hw2/client/ HTTP/1.1" 200 9961
+INFO 2023-09-12 20:58:21,144 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 6061
+INFO 2023-09-12 20:58:26,505 basehttp 2296 11476 "POST /admin/logout/ HTTP/1.1" 200 3709
+INFO 2023-09-12 20:58:28,091 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:58:28,100 basehttp 2296 11476 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4267
+INFO 2023-09-12 20:58:31,767 basehttp 2296 11476 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-09-12 20:58:31,785 basehttp 2296 11476 "GET /admin/ HTTP/1.1" 200 9292

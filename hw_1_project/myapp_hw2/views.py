@@ -1,5 +1,4 @@
 from django.shortcuts import render
-<<<<<<< HEAD
 from .forms import ProductForm, ProductPhotoForm
 from .models import Product
 
@@ -42,7 +41,6 @@ def upload_image_to_product(request, product_id):
     else:
         form = ProductPhotoForm()
     return render(request, 'myapp_hw2/upload_image.html', {'form': form, 'message': message,})
-=======
 from .models import Order, Client
 import datetime
 
@@ -79,4 +77,3 @@ def client_products(request, client_id, date):
         date = datetime.datetime.now() - datetime.timedelta(days=30)
     context = {'client': client, 'orders': orders, 'date': date}
     return render(request, 'myapp_hw2/client_products.html', context)
->>>>>>> 3f27b301cc4ba52a21b966e14e6ccc65d7a3ec5e
